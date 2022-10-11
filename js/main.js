@@ -1,13 +1,25 @@
-
+//!TODO if user has not entered a new question, keep answer the same on repeat clicks
 const outputArea = document.querySelector(".textbox");
 const inputArea = document.querySelector(".input");
 const triangle = document.querySelector(".triangle");
 document.querySelector(".submit").addEventListener("click", randomPhrase);
+// document.querySelector(".submit").addEventListener("click", removeClass);
 document.querySelector(".submit").addEventListener("click", addClass);
 function addClass () {
-  triangle.classList.add("triangle-result");
-  outputArea.classList.add("text-result");
+  if (triangle.classList.contains("text-result")) {
+    triangle.classList.remove("triangle-result");
+    outputArea.classList.remove("text-result");
+  } else {
+    triangle.classList.add("triangle-result");
+    outputArea.classList.add("text-result");
+  }
 }
+// function removeClass () {
+//   if (triangle.classList.contains("text-result")) {
+//     triangle.classList.remove("triangle-result");
+//     outputArea.classList.remove("text-result");
+//   } 
+// }
 // function randomizer () {
 //   const randomNum = Math.floor(Math.random() * 3);
 //   return randomNum;
@@ -55,6 +67,7 @@ function randomPhrase() {
       break;
   }
 }
+console.log(triangle.classList)
 
 // function test() {
 //   outputArea.innerText = "Hello World";
