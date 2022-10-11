@@ -9,13 +9,17 @@ html {
   padding: 0;
 }
 
+p.attribution > a, *a, * > a {
+  text-decoration: none;
+}
+
 footer {
   font-size: 1.25rem;
   font-weight: 300;
-  position: fixed;
+  /* position: fixed;
   top: 110%;
   left: 0;
-  right: 0;
+  right: 0; */
   text-align: center;
 }
 footer > p {
