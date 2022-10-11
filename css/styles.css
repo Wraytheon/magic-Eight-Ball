@@ -62,7 +62,7 @@ html, body{
   top: 60%;
 	border-left: 55px solid transparent;
 	border-right: 55px solid transparent;
-	border-top: 90px solid rgba(60,10,120,0.0);
+	border-top: 90px solid rgba(60,10,120,0);
   opacity: 1;
   transition: ease-in all 0.2s;
 }
