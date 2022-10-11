@@ -1,7 +1,13 @@
+
 const outputArea = document.querySelector(".textbox");
 const inputArea = document.querySelector(".input");
 const triangle = document.querySelector(".triangle");
 document.querySelector(".submit").addEventListener("click", randomPhrase);
+document.querySelector(".submit").addEventListener("click", addClass);
+function addClass () {
+  triangle.classList.add("triangle-result");
+  outputArea.classList.add("text-result");
+}
 // function randomizer () {
 //   const randomNum = Math.floor(Math.random() * 3);
 //   return randomNum;
@@ -10,39 +16,39 @@ function randomPhrase() {
   const randomNum = Math.floor(Math.random() * 6);
   switch (randomNum) {
     case 0:
-      triangle.classList.add("result");
+      
       outputArea.innerHTML = "Not likely";
-      console.log(0)
+      console.log(0);
       break;
     case 1:
-      triangle.classList.add("result");
+      
       outputArea.innerHTML = "Likely";
-      console.log(1)
+      console.log(1);
       break;
     case 2:
-      triangle.classList.add("result");
+      
       outputArea.innerHTML = "Unforeseen";
-      console.log(2)
+      console.log(2);
       break;
     case 3:
-      triangle.classList.add("result");
+      
       outputArea.innerHTML = "Reply hazy try again later";
-      console.log(3)
+      console.log(3);
       break;
     case 4:
-      triangle.classList.add("result");
+      
       outputArea.innerHTML = "All signs point to yes";
-      console.log(4)
+      console.log(4);
       break;
     case 5:
-      triangle.classList.add("result");
+      
       outputArea.innerHTML = "Not a chance";
-      console.log(5)
+      console.log(5);
       break;
     case 6:
-      triangle.classList.add("result");
+      
       outputArea.innerHTML = "Outlook good";
-      console.log(6)
+      console.log(6);
       break;
     default:
       outputArea.innerHTML = "";

@@ -86,7 +86,7 @@ html, body{
   transition: ease-in all 0.2s;
 }
 
-.ball:hover .textbox{
+/* .ball:hover .textbox{
    opacity: 1;
     -webkit-transform: translate(-50%,-50%) rotate(0deg);
     transform: translate(-50%,-50%) rotate(0deg);
@@ -99,7 +99,7 @@ html, body{
   transform: translate(-50%,-50%) rotate(0deg);
   opacity: 1;
    transition: ease-in all 0.2s;
-}
+} */
 
 .shadow{
   background: rgba(10,10,10,1);

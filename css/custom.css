@@ -8,13 +8,21 @@ html {
   margin: 0;
   padding: 0;
 }
-.result {
+.triangle-result {
   border-top: 90px solid rgba(60,10,120,0.9);
   -webkit-transform: translate(-50%,-50%) rotate(0deg);
   transform: translate(-50%,-50%) rotate(0deg);
   opacity: 1;
    transition: ease-in all 0.2s;
 }
+
+.text-result {
+  opacity: 1;
+  -webkit-transform: translate(-50%,-50%) rotate(0deg);
+  transform: translate(-50%,-50%) rotate(0deg);
+ transition: ease-in all 0.2s;
+}
+
 /* p.attribution > a, *a, * > a, a {
   text-decoration: none;
 }
