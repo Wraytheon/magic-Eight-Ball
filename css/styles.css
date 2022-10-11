@@ -54,7 +54,7 @@ html, body{
 
 .triangle{
   -webkit-transform: translate(-50%,-50%) rotate(5deg);
-  transform: translate(-50%,-50%) rotate(5deg);
+  transform: translate(-50%,-70%) rotate(5deg);
   position: absolute;
 	width: 0px; 
 	height: 0px;
@@ -62,7 +62,7 @@ html, body{
   top: 60%;
 	border-left: 55px solid transparent;
 	border-right: 55px solid transparent;
-	border-top: 90px solid rgba(60,10,120,0.9);
+	border-top: 90px solid rgba(60,10,120,0.0);
   opacity: 1;
   transition: ease-in all 0.2s;
 }
@@ -87,8 +87,6 @@ html, body{
 }
 
 .ball:hover .textbox{
-  outline: 2px red solid;
-
    opacity: 1;
     -webkit-transform: translate(-50%,-50%) rotate(0deg);
     transform: translate(-50%,-50%) rotate(0deg);
