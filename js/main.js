@@ -7,46 +7,15 @@ document.querySelector(".submit").addEventListener("click", randomPhrase);
 document.querySelector(".submit").addEventListener("click", addEffect);
 
 function addEffect() {
-  triangle.classList.add("triangle-result");
-  outputArea.classList.add("text-result");
-}
-toggleEffect();
-
-
-function toggleEffect() {
   if (triangle.classList.contains("triangle-result") && outputArea.classList.contains("text-result")) {
     triangle.classList.remove("triangle-result");
     outputArea.classList.remove("text-result");
   }
-
+  triangle.classList.add("triangle-result");
+  outputArea.classList.add("text-result");
 }
-addEffect();
 
 
-
-
-// function refreshEffect () {
-//   if (triangle.classList.contains("triangle-result")) {
-//     triangle.classList.remove("triangle-result");
-//     outputArea.classList.remove("text-result");
-
-    
-//   } else {
-//     triangle.classList.add("triangle-result");
-//     outputArea.classList.add("text-result");
-//   }
-// }
-
-// function removeClass () {
-//   if (triangle.classList.contains("text-result")) {
-//     triangle.classList.remove("triangle-result");
-//     outputArea.classList.remove("text-result");
-//   } 
-// }
-// function randomizer () {
-//   const randomNum = Math.floor(Math.random() * 3);
-//   return randomNum;
-// }
 function randomPhrase() {
   const randomNum = Math.floor(Math.random() * 6);
   switch (randomNum) {
