@@ -1,19 +1,42 @@
 //!TODO if user has not entered a new question, keep answer the same on repeat clicks
 const outputArea = document.querySelector(".textbox");
-const inputArea = document.querySelector(".input");
+const inputArea = document.querySelector(".input-area");
 const triangle = document.querySelector(".triangle");
 document.querySelector(".submit").addEventListener("click", randomPhrase);
 // document.querySelector(".submit").addEventListener("click", removeClass);
-document.querySelector(".submit").addEventListener("click", addClass);
-function addClass () {
-  if (triangle.classList.contains("text-result")) {
+document.querySelector(".submit").addEventListener("click", addEffect);
+
+function addEffect() {
+  triangle.classList.add("triangle-result");
+  outputArea.classList.add("text-result");
+}
+toggleEffect();
+
+
+function toggleEffect() {
+  if (triangle.classList.contains("triangle-result") && outputArea.classList.contains("text-result")) {
     triangle.classList.remove("triangle-result");
     outputArea.classList.remove("text-result");
-  } else {
-    triangle.classList.add("triangle-result");
-    outputArea.classList.add("text-result");
   }
+
 }
+addEffect();
+
+
+
+
+// function refreshEffect () {
+//   if (triangle.classList.contains("triangle-result")) {
+//     triangle.classList.remove("triangle-result");
+//     outputArea.classList.remove("text-result");
+
+    
+//   } else {
+//     triangle.classList.add("triangle-result");
+//     outputArea.classList.add("text-result");
+//   }
+// }
+
 // function removeClass () {
 //   if (triangle.classList.contains("text-result")) {
 //     triangle.classList.remove("triangle-result");
