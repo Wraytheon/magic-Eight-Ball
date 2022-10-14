@@ -8,6 +8,11 @@ html {
   margin: 0;
   padding: 0;
 }
+
+.input-area {
+  margin: auto;
+}
+
 .ball > .triangle{
   -webkit-transform: translate(-50%,-150%) rotate(360deg);
   transform: translate(-50%,-150%) rotate(360deg);
