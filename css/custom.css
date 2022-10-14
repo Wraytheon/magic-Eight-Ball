@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 *, *:before, *:after {
@@ -9,8 +10,20 @@ html {
   padding: 0;
 }
 
+h1 {
+  font-size: 4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input-container {
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: center;
+}
+
 .input-area {
-  margin: auto;
+  display: inline;
+
 }
 
 .ball > .triangle{
