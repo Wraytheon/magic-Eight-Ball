@@ -9,7 +9,7 @@ html, body{
 
 .position {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
@@ -51,7 +51,7 @@ html, body{
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 }
-
+/* 
 .triangle{
   -webkit-transform: translate(-50%,-50%) rotate(5deg);
   transform: translate(-50%,-70%) rotate(5deg);
@@ -65,9 +65,9 @@ html, body{
 	border-top: 90px solid rgba(60,10,120,0);
   opacity: 1;
   transition: ease-in all 0.2s;
-}
+} */
 
-.textbox{
+/* .textbox{
   font: 400 11px Oswald;
   text-shadow: 1px 1px 2px rgba(40,0,200,0.8);
   color: rgba(240,220,240,0.8);
@@ -81,10 +81,10 @@ html, body{
 	height: 50px;
   left: 50%;
   top: 53%;
-  /*TODO - Uncomment when done testing*/
+  /TODO - Uncomment when done testing
   opacity: 0;
   transition: ease-in all 0.2s;
-}
+} */
 
 /* .ball:hover .textbox{
    opacity: 1;
