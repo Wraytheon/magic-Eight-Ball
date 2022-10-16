@@ -7,12 +7,14 @@ document.querySelector(".submit").addEventListener("click", randomPhrase);
 document.querySelector(".submit").addEventListener("click", addEffect);
 
 function addEffect() {
-  if (triangle.classList.contains("triangle-result") && outputArea.classList.contains("text-result")) {
+  if ((triangle.classList.contains("triangle-result") && outputArea.classList.contains("text-result")) && (triangle.classList.contains("triangle") && outputArea.classList.contains("textbox"))) {
     triangle.classList.remove("triangle-result");
     outputArea.classList.remove("text-result");
+  } else {
+    triangle.classList.add("triangle-result");
+    outputArea.classList.add("text-result");
   }
-  triangle.classList.add("triangle-result");
-  outputArea.classList.add("text-result");
+
 }
 
 
@@ -59,7 +61,7 @@ function randomPhrase() {
       break;
   }
 }
-console.log(triangle.classList)
+
 
 // function test() {
 //   outputArea.innerText = "Hello World";
