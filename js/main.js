@@ -2,8 +2,8 @@
 const outputArea = document.querySelector(".textbox");
 const inputArea = document.querySelector(".input-area");
 const triangle = document.querySelector(".triangle");
-document.querySelector(".submit").addEventListener("click", randomPhrase);
-document.querySelector(".submit").addEventListener("click", addEffect);
+document.querySelector(".ball").addEventListener("click", randomPhrase);
+document.querySelector(".ball").addEventListener("click", addEffect);
 
 function randomPhrase() {
   const randomNum = Math.floor(Math.random() * 9) + 1;
