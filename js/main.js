@@ -54,6 +54,21 @@ function randomPhrase() {
       outputArea.innerHTML = "Outlook good";
       console.log(6);
       break;
+    case 7:
+      
+      outputArea.innerHTML = "Yes";
+      console.log(7);
+      break;
+    case 8:
+      
+      outputArea.innerHTML = "No";
+      console.log(8);
+      break;
+    case 9:
+      
+      outputArea.innerHTML = "Don't count on it";
+      console.log(9);
+      break;
     default:
       outputArea.innerHTML = "";
       break;
