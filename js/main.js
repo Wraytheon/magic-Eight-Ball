@@ -6,16 +6,6 @@ document.querySelector(".submit").addEventListener("click", randomPhrase);
 // document.querySelector(".submit").addEventListener("click", removeClass);
 document.querySelector(".submit").addEventListener("click", addEffect);
 
-function addEffect() {
-  if (triangle.classList.contains("triangle-result") && outputArea.classList.contains("text-result")) {
-    triangle.classList.remove("triangle-result");
-    outputArea.classList.remove("text-result");
-  }
-  triangle.classList.add("triangle-result");
-  outputArea.classList.add("text-result");
-}
-
-
 function randomPhrase() {
   const randomNum = Math.floor(Math.random() * 6);
   switch (randomNum) {
@@ -74,7 +64,32 @@ function randomPhrase() {
       break;
   }
 }
-console.log(triangle.classList)
+
+function addEffect() {
+  // if ((triangle.classList.contains("triangle-result") && outputArea.classList.contains("text-result")) && (triangle.classList.contains("triangle") && outputArea.classList.contains("textbox"))) {
+  //   triangle.classList.remove("triangle-result");
+  //   outputArea.classList.remove("text-result");
+  // } else {
+  //   triangle.classList.add("triangle-result");
+  //   outputArea.classList.add("text-result");
+  // }
+  triangle.classList.toggle("triangle-result");
+  outputArea.classList.toggle("text-result");
+  const timeout = function() {
+    setTimeout(resetEffect, 2000);
+  }
+  timeout();
+  return;
+}
+function resetEffect() {
+  triangle.classList.toggle("triangle-result");
+  outputArea.classList.toggle("text-result");
+}
+
+
+
+
+
 
 // function test() {
 //   outputArea.innerText = "Hello World";
