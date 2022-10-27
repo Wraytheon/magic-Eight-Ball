@@ -7,25 +7,26 @@ document.querySelector(".ball").addEventListener("click", shakeIt);
 
 function shakeIt () {
   ball.classList.add("shake");
+  console.log("Shake class added")
   shakeTimeout();
 }
 
 function shakeTimeout () {
   console.log("Shake timeout");
-  setTimeout(addEffect, 500);
+  setTimeout(addEffect, 450);
 }
 
 function addEffect() {
   if (triangle.classList.contains("triangle-result")  && outputArea.classList.contains("text-result")) {
     triangle.classList.remove("triangle-result");
     outputArea.classList.remove("text-result");
-    // ball.classList.remove("shake");
+    ball.classList.remove("shake");
     console.log("classes removed");
     effectTimeout();
   } else {
     triangle.classList.add("triangle-result");
     outputArea.classList.add("text-result");
-    // ball.classList.add("shake");
+    ball.classList.remove("shake");
     console.log("classes added");
     randomPhrase();
   }
@@ -39,8 +40,8 @@ function effectTimeout() {
 function resetEffect() {
   triangle.classList.toggle("triangle-result");
   outputArea.classList.toggle("text-result");
-  ball.classList.toggle("shake");
   // ball.classList.toggle("shake");
+  console.log("classes toggled")
   randomPhrase();
 }
 
@@ -101,7 +102,7 @@ function randomPhrase() {
       outputArea.innerHTML = "";
       break;
   }
-  console.log("text result")
+  console.log("text result");
 }
 
 
