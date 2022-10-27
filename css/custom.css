@@ -47,7 +47,7 @@ h1 {
 }
 
 .textbox {
-  font: 400 11px Oswald;
+  font: 400 11px 'Oswald';
   text-shadow: 1px 1px 2px rgba(40,0,200,0.8);
   color: rgba(240,220,240,0.8);
   text-align: center;
