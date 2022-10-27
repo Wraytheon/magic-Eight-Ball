@@ -3,31 +3,36 @@ const outputArea = document.querySelector(".textbox");
 const inputArea = document.querySelector(".input-area");
 const triangle = document.querySelector(".triangle");
 const ball = document.querySelector(".ball");
-document.querySelector(".ball").addEventListener("click", addEffect);
+document.querySelector(".ball").addEventListener("click", shakeIt);
 
-// function shakeIt () {
-//   ball.classList.add("shake");
-//   addEffect();
-// }
+function shakeIt () {
+  ball.classList.add("shake");
+  shakeTimeout();
+}
+
+function shakeTimeout () {
+  console.log("Shake timeout");
+  setTimeout(addEffect, 500);
+}
 
 function addEffect() {
   if (triangle.classList.contains("triangle-result")  && outputArea.classList.contains("text-result")) {
     triangle.classList.remove("triangle-result");
     outputArea.classList.remove("text-result");
-    ball.classList.remove("shake");
+    // ball.classList.remove("shake");
     console.log("classes removed");
     effectTimeout();
   } else {
     triangle.classList.add("triangle-result");
     outputArea.classList.add("text-result");
-    ball.classList.add("shake");
+    // ball.classList.add("shake");
     console.log("classes added");
     randomPhrase();
   }
 
 }
 function effectTimeout() {
-  console.log('Timeout');
+  console.log('Triangle timeout');
   setTimeout(resetEffect, 1000);
 }
 
@@ -35,6 +40,7 @@ function resetEffect() {
   triangle.classList.toggle("triangle-result");
   outputArea.classList.toggle("text-result");
   ball.classList.toggle("shake");
+  // ball.classList.toggle("shake");
   randomPhrase();
 }
 
