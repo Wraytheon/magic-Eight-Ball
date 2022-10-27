@@ -10,6 +10,12 @@ html {
   padding: 0;
 }
 
+.main-bg {
+  height: 100%;
+  background-image: url(/images/starry-bg.jpg);
+  background-size: cover;
+}
+
 h1 {
   font-size: 4rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
