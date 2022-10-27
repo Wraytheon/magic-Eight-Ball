@@ -2,8 +2,9 @@
 const outputArea = document.querySelector(".textbox");
 const inputArea = document.querySelector(".input-area");
 const triangle = document.querySelector(".triangle");
-document.querySelector(".ball").addEventListener("click", randomPhrase);
 document.querySelector(".ball").addEventListener("click", addEffect);
+document.querySelector(".ball").addEventListener("click", randomPhrase);
+
 
 function randomPhrase() {
   const randomNum = Math.floor(Math.random() * 9) + 1;
@@ -64,15 +65,23 @@ function randomPhrase() {
   }
 }
 
-function addEffect() {
-  triangle.classList.toggle("triangle-result");
-  outputArea.classList.toggle("text-result");
-  const timeout = function() {
-    setTimeout(resetEffect, 2000);
-  }
-  timeout();
-  return;
+const timeout = function() {
+  console.log('Timeout');
+  setTimeout(resetEffect, 1000);
 }
+
+function addEffect() {
+  if (triangle.classList.contains("triangle-result")  && outputArea.classList.contains("text-result")) {
+    triangle.classList.remove("triangle-result");
+    outputArea.classList.remove("text-result");
+    timeout();
+  } else {
+    triangle.classList.add("triangle-result");
+    outputArea.classList.add("text-result");
+  }
+
+}
+
 function resetEffect() {
   triangle.classList.toggle("triangle-result");
   outputArea.classList.toggle("text-result");
