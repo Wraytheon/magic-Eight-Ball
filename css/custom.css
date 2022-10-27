@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: whitesmoke;
 }
 
 *, *:before, *:after {
@@ -19,9 +20,13 @@ html {
 h1 {
   font-size: 4rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 0;
+  margin-bottom: 0.5em;
   margin-top: 0;
   padding-bottom: 0;
+}
+
+h2 {
+  margin-bottom: .5em;
 }
 
 .input-container {
